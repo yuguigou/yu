@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/indent.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min%20.css"/>
+		
+		<style>
+			  .swiper-button-next:after, .swiper-button-prev:after {
+    				background-color: rgb(204,204,204);
+    				font-size: 35px;
+				}
+				.swiper-button-next:after, .swiper-button-prev:after:hover{
+					background-color: black;
+				}
+				table{
+					border: white;
+					border-bottom: rgb(238,238,238);
+				}
+				
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		<div class="logo" >
+			<img src="img/logo.webp" >
+		</div>
+		<div class="box">
+			<!-- logo -->
+			
+			<!-- 购物车中心 -->
+			<div class="car-wrap">
+				<div class="step-wrap">
+					<div class="step-item">
+						<p>1</p>
+						<p>我的购物袋</p>
+					</div>
+					<div class="step-item">
+						<p>2</p>
+						<p>提交订单</p>
+					</div>
+				</div>
+			</div>
+			<div class="myCar">
+				<div class="left-wrap">
+					<a href="index.html">< 继续购物 </a>
+					<div class="package-title" id="selected">
+						我的购物袋<span id="selectedTotal">
+							0
+						</span>
+						件
+					</div>
+					<div class="catbox">
+						<table border="1" cellspacing="0" cellpadding="0" id="cartTable">
+							<thead>
+								<tr>
+									<th><label><input type="checkbox" class="check-all check"/>&nbsp;全选/反选</label></th>
+								    <th>商品</th>
+									<th>单价</th>
+									<th>数量</th>
+									<th>小计</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody id="tbody">
+							    <tr>
+									<td>
+										<label><input type="checkbox" class="check-one check"/></label>
+										<img src="img/xs_1.webp" style="width: 200px;height: 200px;">
+									</td>
+									<td class="goods"><span>自我无界香水<br><br>50ml</span></td>
+									<td class="price"><span>970</span></td>
+									<td class="count"><span class="reduce">-</span><input type="text" class="count-input" value="1" /><span class="add">+</span></td>
+									<td class="subtotal">970</td>
+									<td class="operation"><span class="delete">删除</span></td>
+								</tr>
+							    <tr>
+							    	<td>
+										<label><input type="checkbox" class="check-one check"/></label>
+										<img src="img/30ml.webp" style="width: 200px;height: 200px;">
+									</td>
+							    	<td class="goods"><span>迷情挚爱香水<br><br>30ml</span></td>
+							    	<td class="price"><span>700</span></td>
+							    	<td class="count"><span class="reduce">-</span><input type="text" class="count-input" value="1" /><span class="add">+</span></td>
+							    	<td class="subtotal">700</td>
+							    	<td class="operation"><span class="delete">删除</span></td>
+							    </tr>
+								<tr>
+									<td>
+										<label><input type="checkbox" class="check-one check"/></label>
+										<img src="img/405%20(1).webp" style="width: 200px;height: 200px;">
+									</td>
+									<td class="goods"><span>红黑管唇膏<br><br> #405烤番茄红</span></td>
+									<td class="price"><span>350</span></td>
+									<td class="count"><span class="reduce">-</span><input type="text" class="count-input" value="1" /><span class="add">+</span></td>
+									<td class="subtotal">350</td>
+									<td class="operation"><span class="delete">删除</span></td>
+								</tr>
+								<tr>
+									<td>
+										<label><input type="checkbox" class="check-one check"/></label>
+										<img src="img/蓝气垫货架白底图.webp" style="width: 200px;height: 200px;">
+									</td>
+									<td class="goods"><span>蓝气垫<br><br> #3适合偏白肤色(粉盒+粉芯) 粉盒+粉芯</span></td>
+									<td class="price"><span>690</span></td>
+									<td class="count"><span class="reduce">-</span><input type="text" class="count-input" value="1" /><span class="add">+</span></td>
+									<td class="subtotal">690</td>
+									<td class="operation"><span class="delete">删除</span></td>
+								</tr>
+						   </tbody>
+						</table>
+					</div>
+
+					<div class="promise-list">
+						<div class="order-full-gift">
+							<div class="title-main">
+								<div class="main">
+									<h2>满减礼</h2>
+									<p>单笔订单满额减礼</p>
+								</div>
+								<p>
+									一键
+									<a href="index.html" id="lo">登录</a>
+									享受会员专属礼
+								</p>
+							</div>
+							<div class="gift-list">
+								
+									<div class="lable">
+										满900加赠
+									</div>
+									<div class="gift-line">
+										<div class="gift-item">
+											<div class="image-list">
+												<img src="img/mj1.webp" alt="">
+											</div>
+											<p class="product-title">阿玛尼黑钥匙至臻奂颜保 <br> 湿赋活精华水 30ml</p>
+											<div class="quanity-line">
+												<p class="product-quantity">数量:1</p>
+											</div>
+										</div>
+										<div class="gift-item">
+											<div class="image-list">
+												<img src="img/mj2l.webp" alt="">
+											</div>
+											<p class="product-title">阿玛尼黑钥匙至臻奂颜保 <br> 湿赋活精华水 30ml</p>
+											<div class="quanity-line">
+												<p class="product-quantity">数量:1</p>
+											</div>
+										</div>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="promise-message">
+						<div class="title">
+							官网特惠礼遇
+							<span>(下方框输入活动代码点击提交)</span>
+						</div>
+						<div class="editor-viewer">
+							<img src="img/官网购物车文案（5.1-5.3）.webp" alt="">
+							<p><br></p>
+							<p><br></p>
+							<p>「爱熠无界」限定礼盒定制礼袋及卡片受疫情影响到货延期，无法随单发出，补发事宜请联系线上美妆顾问。</p>
+							<p><br></p>
+							<p>【因疫情管控，当地仓储仅支持顺丰及韵达的退件，其余物流目前无法到达，请务必选择对应物流，避免影响退货】</p>
+							
+							<p>由于疫情原因，以下地区暂时不支持快递发货服务：新疆维吾尔自治区和田地区和田县，上海市，浙江省嘉兴市，安徽省六安市，吉林省长春市，广西壮族自治区防城港市东兴市。</p>
+							
+							<p>禁发区域存在实时变动的可能，具体发货及派送时间以订单显示与当地通知为准。店铺物流时效也受其影响，给您带来不便敬请谅解。特殊时期，共克时艰，感谢您的理解和支持！</p>
+							
+							<p>【发票开具告知】因受疫情影响暂无法开具发票，恢复时间待定，我们将在恢复后尽快为您登记开具，如有不便，敬请谅解。详情可咨询线上美妆顾问。特殊时期，提醒您做好疫情防护，保障您及家人的身体健康～</p>
+						</div>
+					</div>
+					<div class="coupon-code">
+						<p class="title">优惠代码（请先登录/注册账号）</p>
+						<div class="content">
+							<input type="text">
+							<div class="default-button">
+								提交
+							</div>
+						</div>
+					</div>
+					<div class="cart-summary">
+						<div class="delail-wrap">
+							<h2 class="title">订单总结</h2>
+							<div class="content">
+								<p class="price-line">
+									<span>商品价格</span>
+									<span class="price" id="priceTotal1">0.00</span>
+								</p>
+								<p class="price-line">
+									<span>运费</span>
+									<span>￥15</span>
+								</p>
+							</div>
+						</div>
+						<div class="total-line">
+							<!-- <div class="total">合计：￥<span id="priceTotal">0.00</span></div> -->
+							<span class="label">总价</span>
+							<span class="price" id="priceTotal">0.00</span>
+						</div>
+					</div>
+					<div class="checkOut-wrap">
+						<a href="index.html" class="continue">< 继续购物</a>
+						<button class="defult-button">立即结算</button>
+					</div>
+				</div>
+				<div class="right-wrap">
+					<div class="hot-sales">
+						<p>热卖产品推荐</p>
+						<div class="product-card">
+							<div class="product-content">
+								<div class="image-wrap">
+									<!-- Swiper -->
+									
+									<div
+									  style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+									  class="swiper mySwiper"
+									>
+									  <div class="swiper-wrapper">
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									       <img src="img/rm1.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm2.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm3.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm4.webp" alt="">
+									      </div>
+									    </div>
+									   
+									  </div>
+									  <div class="swiper-button-next" ></div>
+									  <div class="swiper-button-prev"></div>
+									  <div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<b>全新 阿玛尼「红黑管」哑光唇膏</b>
+								<span>ROUGE D'ARMANI MATTE</span>
+								<p>#405烤番茄红</p>
+								<div class="content-star">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+								</div>
+								<p style="margin-top: 10px; color: black; font-size: 15px;">￥350</p>
+								<button>立即购买</button>
+							</div>
+							
+						</div>
+						<div class="product-card">
+							<div class="product-content">
+								<div class="image-wrap">
+									<!-- Swiper -->
+									
+									<div
+									  style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+									  class="swiper mySwiper"
+									>
+									  <div class="swiper-wrapper">
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									       <img src="img/rm5.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm6.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm7.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm8.webp" alt="">
+									      </div>
+									    </div>
+										<div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											 <img src="img/rm9.webp" alt="">
+											</div>
+										  </div>
+										  <div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm10.webp" alt="">
+											</div>
+										  </div>
+										  <div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm11.webp" alt="">
+											</div>
+										  </div>
+										  <div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm12.webp" alt="">
+											</div>
+										  </div>
+									   
+									  </div>
+									  <div class="swiper-button-next" ></div>
+									  <div class="swiper-button-prev"></div>
+									  <div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<b>阿玛尼大师「蓝气垫」造型轻垫粉底液</b>
+								<span>DESIGNER ESSENCE-IN-BALM MESH CUSHION</span>
+								<p>#2适合白皙肤色(粉盒+粉芯)</p>
+								<div class="content-star">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+								</div>
+								<p style="margin-top: 10px; color: black; font-size: 15px;">￥690</p>
+								<button>立即购买</button>
+							</div>
+							
+						</div>
+						<div class="product-card">
+							<div class="product-content">
+								<div class="image-wrap">
+									<!-- Swiper -->
+									
+									<div
+									  style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+									  class="swiper mySwiper"
+									>
+									  <div class="swiper-wrapper">
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									       <img src="img/rm13.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm14.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm15.webp" alt="">
+									      </div>
+									    </div>
+									    <div class="swiper-slide">
+									      <div class="swiper-zoom-container">
+									        <img src="img/rm16.webp" alt="">
+									      </div>
+									    </div>
+										<div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm17.webp" alt="">
+											</div>
+										  </div>
+										  <div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm17.webp" alt="">
+											</div>
+										  </div>
+										  <div class="swiper-slide">
+											<div class="swiper-zoom-container">
+											  <img src="img/rm18.webp" alt="">
+											</div>
+										  </div>
+									   
+									  </div>
+									  <div class="swiper-button-next" ></div>
+									  <div class="swiper-button-prev"></div>
+									  <div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<b>阿玛尼自我无界香水</b>
+								<span>MY WAY EAU DE PARFUME</span>
+								<p>30ml</p>
+								<div class="content-star">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+									<img src="img/wjx.png" alt="">
+								</div>
+								<p style="margin-top: 10px; color: black; font-size: 15px;">￥780</p>
+								<button>立即购买</button>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+		<img src="img/db.jpg" alt="" class="imga">
+		
+		<script src="js/swiper-bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/indent.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+		  var swiper = new Swiper(".mySwiper", {
+		    zoom: true,
+		    navigation: {
+		      nextEl: ".swiper-button-next",
+		      prevEl: ".swiper-button-prev",
+		    },
+		    pagination: {
+		      el: ".swiper-pagination",
+		      clickable: true,
+		    },
+		  });
+		</script>
+	</body>
+</html>
